@@ -102,5 +102,48 @@ greet()
 print("dasdadads")
 greet()
 
+def _123():  # identifier rule is failed
+    print("Hi1")
+
+
+def _():
+    print("Hi")
+
+
+_()
+_123()
+
+
+def pramod123():
+    print("Hello")
+
+
+def h():
+    print("hello")
+    print("I am part of h function ?")
+
+print("Not a Part of Functions")
+
+def first_part_last_name():
+    pass  # # in future i will complete this functions
+
+
+def greet_to_all_of_you():
+    print("Hello, Everyone")
+
+
+def greet():
+    print("Yes")
+    greet_to_all_of_you()
+
+greet()
+
+def greet_by_name(name):
+    print("Hello,", name)
+    print(f"Hello, {name}")
+
+greet_by_name("Pramod")
+greet_by_name(123)
+greet_by_name(3.14)
 
 
