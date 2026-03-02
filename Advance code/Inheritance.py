@@ -118,28 +118,21 @@ c1 = Calculator()
 print(c1.add(5, 3))      # 2 arguments
 print(c1.add(5, 3, 2))   # 3 arguments
 
-
 # class method is brother of static method
-# class k liye kaam karna cls method se
-class Employee:
-  company = "Sony"
-  salary = 10
-  location = "Delhi"
+class Student:
+    school = "ABC School"   # class attribute
+    @classmethod
+    def changeSchool(cls, new_school):
+        cls.school = new_school
+# Before change
+print(Student.school)
+# Change using class method
+Student.changeSchool("XYZ School")
+# After change
+print(Student.school)
+# ABC School
+# XYZ School
 
-# def changeSalary(self, sal):
-# self.__class__.salary = sal
-# -> this is alternative method of class method
-
-  @classmethod
-  def changeSalary(cls,sal):
-      cls.salary = sal
-
-e = Employee()
-print(e.salary)
-e.changeSalary(100)
-print(e.salary)
-print(Employee.salary)
-'''
 
 # property method / getter
 '''
@@ -224,6 +217,7 @@ n = Number(9)
 print(n)
 print(len(n))
  ''' 
+
 
 
 
