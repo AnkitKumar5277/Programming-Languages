@@ -1,3 +1,14 @@
+num = int(input("Enter a number: "))
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+
 # Python Program to Count the Number of Each Vowel
 # Program to count the number of each vowels
 vowels = 'aeiou'
