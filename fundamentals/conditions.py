@@ -1,3 +1,11 @@
+def count_leap_years(start_year, end_year):
+    leap_years = 0
+    for year in range(start_year, end_year + 1):
+        if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+            leap_years += 1
+    return leap_years
+print(count_leap_years(2000, 2020))  # Output: 6
+
 # Python program to check if year is a leap year or not
 # To get year (integer input) from the user
 year = int(input("Enter a year: "))
