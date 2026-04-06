@@ -5,6 +5,11 @@ print(a is b)  # Output: True (because small integers share the same memory in P
 name = "Hello"
 print("H" in name)  # Output: True
 
+# Valid identifiers
+my_name = "John"
+_age = 20
+marks1 = 88
+
 # Find square root of real or complex numbers
 import cmath
 num = 1+2j
