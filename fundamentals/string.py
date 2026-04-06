@@ -4,6 +4,11 @@ a = x.split()
 print(a)
 # ['this', 'is', 'example', 'of', 'split', 'method']
 
+s = "Ankit"
+print(s[::2])
+print(s[::-1])
+print(s[:])
+
 # ✅ str.format()
 name = "Alice"
 age = 25
