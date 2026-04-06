@@ -5,6 +5,16 @@ def greet():
 # Function call
 greet()
 
+# 🧱 9️⃣ Base Condition in Recursion
+# Concept: Recursion me base condition stopping point hota hai.
+def countdown(n):
+    if n==0:
+        print("Time's up!")
+    else:
+        print(n)
+        countdown(n-1)
+countdown(5)
+
 # 🔁 8️⃣ Recursion (Function Calling Itself)
 # Concept: Jab ek function apne aap ko call karta hai.
 # Example – Factorial using recursion
