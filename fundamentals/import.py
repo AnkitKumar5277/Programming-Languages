@@ -17,3 +17,5 @@ try:
 except FileExistsError:
     print("File already exists")
 
+import random
+print(random.randint(1,10))
