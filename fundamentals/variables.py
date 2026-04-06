@@ -1,3 +1,13 @@
+a = 10          # int
+b = 3.14        # float
+c = "Ankit"     # string
+d = [1, 2, 3]   # list
+e = (4, 5, 6)   # tuple
+f = {7, 8, 9}   # set
+g = {'name': 'John', 'age': 20}  # dict
+h = True        # boolean
+i = None        # none
+
 a = 10
 b = 10
 print(a is b)  # Output: True (because small integers share the same memory in Python)
