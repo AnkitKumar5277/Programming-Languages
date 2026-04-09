@@ -1,3 +1,7 @@
+# Program to find the ASCII value of the given character
+c = 'p'
+print("The ASCII value of '" + c + "' is", ord(c))
+
 # Python Program to Convert Decimal to Binary, Octal and Hexadecimal
 # Python program to convert decimal into other number systems
 dec = int(input("Enter No."))
