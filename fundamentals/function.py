@@ -1,4 +1,14 @@
-   
+# Write a function to find the sum of first N natural numbers.
+# Hint: The formula for the sum of the first N natural numbers is N*(N+1)/2.
+# For example, for input 5, the outout should be 15.
+def sum_of_natural_numbers(n):
+    if n < 1:
+        return "Input must be a positive integer."
+    return n * (n + 1) // 2  # Using integer division for an exact result
+number = 5
+result = sum_of_natural_numbers(number)
+print(f"The sum of the first {number} natural numbers is {result}.")
+
 #challenge
 def sum_of_digits(number):
     return sum(int(digit) for digit in str(number))
