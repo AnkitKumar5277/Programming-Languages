@@ -1,4 +1,14 @@
-
+# Python Program to Find the Sum of Natural Numbers
+num = 16
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)
+# The sum is 136
 
 # Example 3: Without using enumerate()
 l = [21, 44, 35, 11]
