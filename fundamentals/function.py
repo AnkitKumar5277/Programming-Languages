@@ -1,3 +1,13 @@
+# Write a function to check if a number is divisible by five.
+# Return True if the number is divisible by 5. Otherwise, return False.
+def is_divisible_by_five(number):
+    return number % 5 == 0
+# Example usage
+print(is_divisible_by_five(10))  # True
+print(is_divisible_by_five(12))  # False
+print(is_divisible_by_five(0))   # True
+print(is_divisible_by_five(-15)) # True
+
 # Write a function to find the sum of first N natural numbers.
 # Hint: The formula for the sum of the first N natural numbers is N*(N+1)/2.
 # For example, for input 5, the outout should be 15.
