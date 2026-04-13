@@ -1,3 +1,16 @@
+# Python Program to Count the Number of Each Vowel
+# Program to count the number of each vowels
+vowels = 'aeiou'
+ip_str = 'Hello, have you tried our tutorial section yet?
+ip_str = ip_str.casefold()
+count = {}.fromkeys(vowels,0)
+for char in ip_str:
+   if char in
+      count[char] += 1
+print(count)
+# output
+# {'a': 2, 'e': 5, 'i': 3, 'o': 5, 'u': 3}
+
 # Python Program to find the factors of a number
 # This function computes the factor of the argument passed
 def print_factors(x):
