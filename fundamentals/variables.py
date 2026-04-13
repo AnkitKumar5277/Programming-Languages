@@ -1,3 +1,57 @@
+q, r = divmod(5, 2)
+print(q)
+print(r)
+
+print(5 % 2) # Modules
+print(5 // 2)
+
+# 2 | 5 | 2 - Quotient
+#   | 4 |
+# --------
+#     1 - Remainder
+
+print(13 // 2)
+print(13 % 2)
+
+b = abs(-10) # Return the absolute value of the argument.
+print(b)
+c =abs(-9)
+print(c)
+# 10
+# 9
+
+name = "This is a Big line"
+print(type(name))
+name = name + str(1)  # can only concatenate str (not "int") to str
+print(name)
+
+first_name = "Pramod"
+last_name = "Dutta"
+full_name = first_name + " " + last_name
+print(full_name)
+print(type(full_name))
+
+a = "ankit"
+b = "kumar"
+c = a + " "+ b
+print(c)
+
+# # Complex numbers - Python - iota
+# # i - root to per -1
+
+complex_number = 2 + 3j
+print(complex_number.real)
+print(complex_number.imag)
+
+print("Pramod", 123, "Amit", "John", sep='*',end="      ")
+print("Pramod", 123, "Amit", "John", sep='*')
+
+a, b, c = 45, 54, 67
+print(a)
+print(b)
+print(c)
+print(a,b,c,sep=" | ")
+
 # Program to find the ASCII value of the given character
 c = 'p'
 print("The ASCII value of '" + c + "' is", ord(c))
