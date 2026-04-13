@@ -1,3 +1,17 @@
+# A
+# B B
+# C C C
+# D D D D
+# E E E E E
+rows = int(input("Enter number of rows: "))
+ascii_value = 65
+for i in range(rows):
+  for j in range(i+1):
+    alphabet = chr(ascii_value)
+    print(alphabet, end=" ")
+  ascii_value += 1
+  print()
+
 # Write a function to return the first N vowels from a given string.
 # Return the first N vowels from the string. If there are fewer than N vowels in the string, return "Not found".
 # For example, for input "Hello World", the output should be 'e', 'o', 'o'.
