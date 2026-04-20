@@ -1,3 +1,6 @@
+
+
+# real method is below ->
 def readFile(filename):
   try:
     with open(filename,'r') as f :
