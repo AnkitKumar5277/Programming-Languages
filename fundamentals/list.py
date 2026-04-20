@@ -1,5 +1,9 @@
+# write a list comprehension to print a list which contains the multipication table of a user entered number
+n = int(input("Enter your number : "))
+table = [ n*i for i in range(1,11) ]
+print(table)
+
 # write a program to print third fifthe and seventh element from a list using enurmerate function
-'''
 l = [1,2,3,4,5,6,7,8,9,10]
 for index, item in enumerate(l):
   if index == 2 or index == 4 or index == 6:
