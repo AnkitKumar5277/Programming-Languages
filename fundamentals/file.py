@@ -1,3 +1,11 @@
+def readFile(filename):
+  with open(filename,"r") as f:
+    print(f.read())
+
+readFile("1.txt")
+readFile("2.txt")
+readFile("3.txt")
+
 dir = r'C:\pramod\n.txt'
 print(dir)
 
