@@ -1,70 +1,9 @@
-AP2 S
-# advance python 2 set
 
-# 1. create two virtual environments, install few packages in the first one. how do you create similer Environment in the second one ?
 
-# type virtualenv ak in shell or terminal
 
-# q2
-'''
-n = input("Enter your name : ")
-m = input("Enter your marks : ")
-p = input("Enter your phone number : ")
 
-template = " The name of the student is {}, his marks are {} phone number is {} "
 
-output = template.format(n,m,p)
-print(output)
-'''
 
- # 3. a list contains the multipication table of 7 write a program to convert it to a vertical string of same numbers
-  # (7)
-  # 14
-  # .
-  # .
-  # .
-# basic
-'''
-l = [i*7 for i in range(1,11)]
-print(l)
-'''
-# main ques.
-'''
-l = [str(i*7) for i in range(1,11)]
-print(l)
-verticalTable = "\n".join(l)
-print(verticalTable)
-print("\n".join(l)) # direct method
-'''
-
-# 4. filter que.
-'''
-l = [1,2,3,4,5,6,7,8,9,10,50,20,10,2,1,5]
-a = filter(lambda a: a%5==0, l)
-print(list(a))
-'''
-
-# 5. 
-'''
-from functools import reduce
-l = [3,8,455,2,5,45]
-a = reduce(max,l)
-print(max(7,34))
-print(a)
-'''
-
-# 6. 
-# 7. explore the flask module and create a web server using flask & python.
-
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-  return 'Hello, World!'
-
-if __name__ == "__main__":
-    app.run(debug=True)
   
 
 
