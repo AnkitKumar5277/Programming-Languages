@@ -1,3 +1,8 @@
+# set comprehension
+s = [2,9,9,2,4,2,0]
+r = {i for i in s}
+print(r)
+
 # another second method of comprehension
 a = [3,9,2,8]
 b = [i for i in a if i%2 == 0]
