@@ -1,3 +1,13 @@
+
+# comprehension
+a = [1,8,3,2,9]
+b = []
+for item in a:
+  if item % 2 == 0:
+    b.append(item)
+
+print(b)
+
 # another second method enumerate function
 list = [9,7,4,2]
 for index, item in enumerate(list):
