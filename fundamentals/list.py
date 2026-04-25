@@ -1,3 +1,7 @@
+# another second method of comprehension
+a = [3,9,2,8]
+b = [i for i in a if i%2 == 0]
+print(b) 
 
 # comprehension
 a = [1,8,3,2,9]
