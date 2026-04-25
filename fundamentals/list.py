@@ -1,3 +1,10 @@
+# enumerate function
+list = [2,3,9,3,1]
+index = 0 
+for item in list:
+  print(item, index)
+  index += 1
+
 from functools import reduce
 l = [3,8,455,2,5,45]
 a = reduce(max,l)
