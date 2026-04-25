@@ -1,3 +1,17 @@
+# try except with finally
+try:
+  i = int(input("Entera number"))
+  c = 1/i
+
+except Exception as e:
+  print(e)
+  exit()
+
+finally:
+  print("We are done") # prints both case
+
+print("thanks for using the program") # when prints you input right
+
 # Example 5 else / try with else clause
 try:
   i = int(input("Enter a number"))
