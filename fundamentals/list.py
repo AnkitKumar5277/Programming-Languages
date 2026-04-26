@@ -1,3 +1,11 @@
+# join in list and tuple() and iterate
+l = ["Camera", "Laptop", "Phone", "ipad", "Hard disk"]
+sentence = " and ".join(l)
+print(sentence)
+print(" or ".join(l))
+print("\n".join(l))
+print(type(sentence))
+
 # set comprehension
 s = [2,9,9,2,4,2,0]
 r = {i for i in s}
