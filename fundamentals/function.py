@@ -37,6 +37,7 @@ pramod = make_pizza("tomato","olives", "\n")
 jayati = make_pizza("pineapple","olives","corn","paneer", "\n")
 vinay = make_pizza("tomato")
 
+# decorator
 def add_before_ui_after_ui(func):
      def wrapper():
          print("Before the running UI TC")
@@ -45,11 +46,9 @@ def add_before_ui_after_ui(func):
          print("Ending the running UI TC")
          print("Quit the Browser!")
      return wrapper()
-
 @add_before_ui_after_ui
 def test_ui():
      print(">> I will Test the UI")
-
 
 # Write a function to check if a number is divisible by five.
 # Return True if the number is divisible by 5. Otherwise, return False.
