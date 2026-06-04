@@ -1,17 +1,3 @@
-_ = 12
-print(_)
-
-a = 10
-_ = 45
-_ = _+1 
-print(_)
-
-abc123 = 78
-_pramod = "amit"
-_abc = 23
-# &123 = 23   x
-
-
 q, r = divmod(5, 2)
 print(q)
 print(r)
