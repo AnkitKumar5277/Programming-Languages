@@ -1,19 +1,3 @@
-# another method
-name = "ankit"
-channel = "software - X"
-type = "coding"
-a = "this is {}".format(name)
-b = "this is {} and his channal is {}".format(name, channel) 
-c = "this is {0} and his {2} channel is {1}".format(name, channel, type)
-print(a)
-print(b)
-print(c)
-
-# format method
-name = "ankit"
-a = f"this is {name}"
-print(a)
-
 l = [str(i*7) for i in range(1,11)]
 print(l)
 verticalTable = "\n".join(l)
