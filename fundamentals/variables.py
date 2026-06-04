@@ -1,22 +1,19 @@
-q, r = divmod(5, 2)
-print(q)
-print(r)
-
-print(5 % 2) # Modules
-print(5 // 2)
-
 # 2 | 5 | 2 - Quotient
 #   | 4 |
 # --------
 #     1 - Remainder
 
-print(13 // 2)
-print(13 % 2)
+q, r = divmod(5, 2)
+print(q)
+print(r)
+# 2
+# 1
+
+print(5 % 2) # 1
+print(5 // 2) # 2
 
 b = abs(-10) # Return the absolute value of the argument.
 print(b)
-c =abs(-9)
-print(c)
 # 10
 # 9
 
@@ -24,60 +21,50 @@ name = "This is a Big line"
 print(type(name))
 name = name + str(1)  # can only concatenate str (not "int") to str
 print(name)
-
-first_name = "Pramod"
-last_name = "Dutta"
-full_name = first_name + " " + last_name
-print(full_name)
-print(type(full_name))
+# This is a Big line1
 
 a = "ankit"
 b = "kumar"
 c = a + " "+ b
 print(c)
+# ankit kumar
 
-# # Complex numbers - Python - iota
-# # i - root to per -1
-
+# Complex numbers - Python - iota
+# i - root to per -1
 complex_number = 2 + 3j
 print(complex_number.real)
 print(complex_number.imag)
+# 2.0
+# 3.0
 
 print("Pramod", 123, "Amit", "John", sep='*',end="      ")
 print("Pramod", 123, "Amit", "John", sep='*')
+# Pramod*123*Amit*John      Pramod*123*Amit*John
 
 a, b, c = 45, 54, 67
 print(a)
 print(b)
 print(c)
 print(a,b,c,sep=" | ")
+# 45
+# 54
+# 67
+# 45 | 54 | 67
 
 # Program to find the ASCII value of the given character
 c = 'p'
 print("The ASCII value of '" + c + "' is", ord(c))
 
-# Python Program to Convert Decimal to Binary, Octal and Hexadecimal
-# Python program to convert decimal into other number systems
 dec = int(input("Enter No."))
 print("The decimal value of", dec, "is:")
 print(bin(dec), "in binary.")
 print(oct(dec), "in octal.")
 print(hex(dec), "in hexadecimal.")
 
-a = 10          # int
-b = 3.14        # float
-c = "Ankit"     # string
-d = [1, 2, 3]   # list
-e = (4, 5, 6)   # tuple
 f = {7, 8, 9}   # set
 g = {'name': 'John', 'age': 20}  # dict
-h = True        # boolean
 i = None        # none
 
-num1 = input('Enter first number: ')
-num2 = input('Enter second number: ')
-sum = float(num1) + float(num2)
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
 print('The sum is %.1f' %(float(input('Enter first number: ')) + float(input('Enter second number: '))))
 
 kilometers = float(input("Enter value in kilometers: "))
@@ -88,13 +75,6 @@ print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
 celsius = float(input("Enter: "))
 fahrenheit = (celsius * 1.8) + 32
 print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
-
-
-
-num1 = 1.5
-num2 = 6.3
-sum = num1 + num2
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
 
 a = 10
 b = 10
@@ -114,15 +94,8 @@ x, y = y, x
 print("x =", x)
 print("y =", y)
 
-
-
 name = "Hello"
 print("H" in name)  # Output: True
-
-# Valid identifiers
-my_name = "John"
-_age = 20
-marks1 = 88
 
 #Addition and Subtraction
 x = x + y
@@ -138,13 +111,6 @@ XOR swap
 x = x ^ y
 y = x ^ y
 x = x ^ y
-
-# Find square root of real or complex numbers
-import cmath
-num = 1+2j
-num = eval(input('Enter a number: '))
-num_sqrt = cmath.sqrt(num)
-print('The square root of {0} is {1:0.3f}+{2:0.3f}j'.format(num ,num_sqrt.real,num_sqrt.imag))
 
 # Python Program to find the area of triangle
 a = float(input('Enter first side: '))
