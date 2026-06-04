@@ -1,3 +1,13 @@
+name = "ankit"
+channel = "software - X"
+type = "coding"
+a = "this is {}".format(name)
+b = "this is {} and his channal is {}".format(name, channel) 
+c = "this is {0} and his {2} channel is {1}".format(name, channel, type)
+print(a)
+print(b)
+print(c)
+
 name = "This is a Big line"
 print(type(name))
 name = name + str(1)  # can only concatenate str (not "int") to str
