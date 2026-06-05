@@ -1,3 +1,45 @@
+# enumerate function
+list = [2,3,9,3,1]
+index = 0 
+for item in list:
+  print(item, index)
+  index += 1
+# 2 0
+# 3 1
+# 9 2
+# 3 3
+# 1 4
+
+# another second method enumerate function
+list = [9,7,4,2]
+for index, item in enumerate(list):
+  print(item, index)
+# 9 0
+# 7 1
+# 4 2
+# 2 3
+
+# comprehension
+a = [1,8,3,2,9]
+b = []
+for item in a:
+  if item % 2 == 0:
+    b.append(item)
+print(b)    
+# [8, 2]
+
+# another second method of comprehension
+a = [3,9,2,8]
+b = [i for i in a if i%2 == 0]
+print(b) 
+# [2, 8]
+
+# set comprehension
+s = [2,9,9,2,4,2,0]
+r = {i for i in s}
+print(r)
+# {0, 9, 2, 4}
+
 # join in list and tuple() and iterate
 l = ["Camera", "Laptop", "Phone", "ipad", "Hard disk"]
 sentence = " and ".join(l)
