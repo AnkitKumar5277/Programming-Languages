@@ -1,3 +1,37 @@
+var xobject = {};
+xObject = {
+    name : "ankit",
+    age : 99
+}
+
+function greet() {
+    console.log("hi, how are you?")
+}
+greet()
+
+var response = '{"name" : "Pramod","age" : 30,"cars" : ["Audi","BMW","I10"]}';
+var parseResponseJS = JSON.parse(response)
+console.log(response)
+
+console.log(parseResonJS["name"])
+var parseResponseJS = JSON.parse(response)
+
+console.log(parseResponseJS["name"])
+console.log(parseResponseJS["age"])
+
+// JS Object -> JSON
+var jsObject = {
+  name : "Amit",
+  age : 89
+}
+
+var JSONStr = JSON.stringify(jsObject)
+console.log(JSONStr)
+
+var xArray = ["apple","organe","bananana"]
+console.log(xArray[0])
+console.log(xArray[1])
+
 
 xObject = {
     name: "ankit",
