@@ -31,57 +31,6 @@ ankitApp.name = "ankit"
 ankitApp.train = "Rajdhani Express"
 ankitApp.printData() # print
 
-# Encapsulation
-class Student:
-    def __init__(self, name, marks):
-        self.name = name
-        self.__marks = marks   # Private
-    def show_marks(self):
-        print("Marks:", self.__marks)
-s1 = Student("Ankit", 90)
-print(s1.name)      # Allowed
-s1.show_marks()     # Allowed
-
-# Data abstraction 
-class Car:
-    def start(self):
-        print("Car started")
-    def drive(self):
-        print("Car is driving")
-my_car = Car()
-my_car.start() # user use only
-my_car.drive() # user use only
-
-# Polymorphism 
-class Dog:
-    def sound(self):
-        print("Dog barks")
-class Cat:
-    def sound(self):
-        print("Cat meows")
-d = Dog()
-c = Cat()
-d.sound()
-c.sound()
-
-#instance attribute & class attribute
-Class Sample 
-  name = "ankit"	  # class attribute
-obj = Sample() 	  # objects (instances
-obj.name = "vikky"	  # instance attribute / you cant change but you add instance attrubute 
-sample.name = "vikky" # class attribute / you can change class attrubute 
-print(sample.name) 
-print(obj.name) 
-
-# self
-class Employee:
-  company = "IBM"
-  def getSalary(self):
-    print(f"employee of {self.company} is {self.salary}")
-ankit = Employee()
-ankit.salary = 100000
-ankit.getSalary() # Employee.getSalary(ankit) #print the function components
-
 # static method
 class Person:
   company = "Adobe"
