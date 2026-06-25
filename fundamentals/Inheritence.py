@@ -63,75 +63,7 @@ pr.takeBreath()
 print(pr.company)
 print(pr.country)
 
-# super method
-class Person:
-  country = "India"
-  def __init__(self):
-    print("Initializing Person ..\n")
-  def takebreath(self):
-    print("i am breathing")
-class Employee(Person):
-  company = "Honda"
-  def __init__(self):
-    # super().__init__()
-    print("Initializing Employee..\n")
-  def getSalary(self):
-    print(f"salary is {self.salary}")
-  def takebreath(self):
-    super().takebreath()
-    print("i am an employee so i am luckily breathing")
-class Programmer(Employee):
-  company = "Fiverr"
-  def __init__(self):
-    # super().__init__()
-    print("Initializing Programmer..\n")
-  def getSalary(self):
-    print(f"No salary to programmer")
-  def takebreath(self):
-    super().takebreath()
-    print("i am a programmer so i am breathing ++")
-p = Person()
-p.takebreath()
-e = Employee()
-e.takebreath()
-pr = Programmer()
-pr.takebreath()
 
-# Method Overriding
-class Animal:
-    def sound(self):
-        print("Animal makes a sound")
-class Dog(Animal):
-    def sound(self):   # Same method name and parameters
-        print("Dog barks")  # Different behavior
-a = Animal()
-d = Dog()
-a.sound()   
-d.sound()  
-
-# ❎ Method overloading 
-# ✅ default arguments ya *args
-class Calculator:
-    def add(self, a, b=0, c=0):
-        return a + b + c
-c1 = Calculator()
-print(c1.add(5, 3))      # 2 arguments
-print(c1.add(5, 3, 2))   # 3 arguments
-
-# class method is brother of static method
-class Student:
-    school = "ABC School"   # class attribute
-    @classmethod
-    def changeSchool(cls, new_school):
-        cls.school = new_school
-# Before change
-print(Student.school)
-# Change using class method
-Student.changeSchool("XYZ School")
-# After change
-print(Student.school)
-# ABC School
-# XYZ School
 
 # property method / getter
 class Employee:
