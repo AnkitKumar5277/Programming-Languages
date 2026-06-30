@@ -63,21 +63,6 @@ pr.takeBreath()
 print(pr.company)
 print(pr.country)
 
-
-
-# property method / getter
-class Employee:
-  company = "Bharat Gas"
-  salary = 5600
-  salarybonus = 400
-  @property
-  def totalSalary(self):
-    return self.salary + self.salarybonus
- 
-e = Employee()
-print(e.totalSalary)
-# e.totalSalary = 5000 -> does not change we need to setter
-
 # setter method ->
 class Employee:
   company = "Bharat Gas"
