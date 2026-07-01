@@ -7,3 +7,16 @@ const user: User = {
  name: "Ankit",
  email: "ankit@test.com"
 };
+
+// Class
+class Employee {
+ name: string;
+ constructor(name: string) {
+   this.name = name;
+ }
+ display() {
+   console.log(this.name);
+ }
+}
+const emp = new Employee("Ankit");
+emp.display();
