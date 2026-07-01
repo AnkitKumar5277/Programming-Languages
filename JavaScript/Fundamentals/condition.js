@@ -21,3 +21,10 @@ switch (day) {
 }
 // Enter day number : 4
 // Invalid day
+
+// Assertion
+if (element.innerText === "Success") {
+ console.log("Test Passed");
+} else {
+ console.log("Test Failed");
+}
