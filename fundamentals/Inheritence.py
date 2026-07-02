@@ -81,22 +81,7 @@ e.totalSalary = 5800
 print(e.salary)
 print(e.salarybonus)
 
-# operator overloading
-class Number:
-  def __init__(self, num):
-    self.num = num
-  def __add__(self, num2):
-    print("lets add")
-    return self.num + num2.num
-  def __mul__(self, num2):
-    print("lets multiply")
-    return self.num * num2.num
-n1 = Number(4)
-n2 = Number(6)
-sum = n1 + n2
-mul = n1 * n2
-print(sum)
-print(mul)
+
 
 # other dunder method
 class Number:
@@ -115,25 +100,11 @@ n = Number(9)
 print(n)
 print(len(n))
 
-# decorator function
-def my_decorator(func):
-    def wrapper():
-        print("Before function runs")
-        func()
-        print("After function runs")
-    return wrapper
 
-# function to decorate
-@my_decorator
-def say_hello():
-    print("Hello!")
-say_hello()
 
-# Dictionary comprehension
-numbers = [1, 2, 3, 4]
-square_dict = {n: n*n for n in numbers}
-print(square_dict)
-{1: 1, 2: 4, 3: 9, 4: 16}
+
+
+
 
 
 
