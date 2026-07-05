@@ -1,0 +1,129 @@
+# challenge:
+def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers."
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(2, n + 1):
+            result *= i
+        return result
+# Example usage:
+# number = 5
+# print(f"The factorial of {number} is {factorial(number)}.")
+
+# Factorial of a number using recursion
+def recur_factorial(n):
+   if n == 1:
+       return n
+   else:
+       return n*recur_factorial(n-1)
+num = 7
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   print("The factorial of", num, "is", recur_factorial(num))
+# The factorial of 7 is 5040
+
+# Python Program to Print the Fibonacci sequence
+nterms = int(input("How many terms? "))
+n1, n2 = 0, 1
+count = 0
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
+# #output 
+# How many terms? 7
+# Fibonacci sequence:
+# 0
+# 1
+# 1
+# 2
+# 3
+# 5
+# 8
+
+print(x and y)  # False
+print(x or y)   # True
+print(not x)    # False
+
+# Python program to check if year is a leap year or not
+year = int(input("Enter a year: "))
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+else:
+    print("{0} is not a leap year".format(year))
+# output
+# 2000 is a leap year
+
+# Write a function to check if the entered integer is odd or even.
+def check_odd_or_even(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+print(check_odd_or_even(4))  # Output: Even
+print(check_odd_or_even(7))  # Output: Odd
+
+# and
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+# Enter a number: 43
+# 43 is Odd
+# Enter a number: 18
+# 18 is Even
+
+score = 85
+grade = "Pass" if score >= 60 else "Fail"
+print(grade)  # Output: Pass
+
+# Challenge:
+def direction(number):
+    if number > 0:
+        return 'Up'
+    elif number < 0:
+        return 'Down'
+    else:
+        return 'Zero'
+print(direction(5))  # Output: 'Up'
+
+# Using if...elif...else
+num = float(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
+
+# Using Nested if
+num = float(input("Enter a number: "))
+if num >= 0:
+   if num == 0:
+       print("Zero")
+   else:
+       print("Positive number")
+else:
+   print("Negative number")
+   # Enter a number: 2
+# Positive number
+# Enter a number: 0
+# Zero
