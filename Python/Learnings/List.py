@@ -137,3 +137,49 @@ my_list = []
 # Add elements to the list using append()
 my_list.append("Apple")
 print(my_list)
+
+# write a list comprehension to print a list which contains the multipication table of a user entered number
+n = int(input("Enter your number : "))
+table = [ n*i for i in range(1,11) ]
+print(table)
+
+num = [1,2,3,4,5,6,7,8,9,10]
+even_numbers = list(filter(lambda x: x % 2 == 0, num))
+print(even_numbers)
+# [2, 4, 6, 8, 10]
+
+add = lambda x, y: x + y
+print(add(8, 2))
+# 10
+
+nums = [1,2,3,4]
+square = list(map(lambda x: x **2, nums))
+print(square)
+# [1, 4, 9, 16]
+
+nums = [1, 2, 3, 4, 5, 6]
+evens = list(filter(lambda x: x % 2 == 0, nums))
+print(evens)
+# [2, 4, 6]
+
+pairs = [(1, 2), (4, 1), (3, 3)]
+sort = sorted(pairs, key = lambda x: x[1])
+print(sort)
+# [(4, 1), (1, 2), (3, 3)]
+
+# map function
+num = [1, 2, 3, 4, 5]
+square = map(lambda x: x**2, num)
+print(list(square))
+# [1, 4, 9, 16, 25]
+
+names = ['john', 'sam', 'linda']
+upper_names = map(str.upper, names)
+print(list(upper_names))
+# ['JOHN', 'SAM', 'LINDA']
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+sum_ab = map(lambda x, y: x + y, a, b)
+print(list(sum_ab))
+# [5, 7, 9]
