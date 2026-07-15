@@ -10,6 +10,7 @@ my_list[1] = 6   # change element
 numbers = [1, 2, 3, 4, 5]
 squares = [n*n for n in numbers]
 print(squares)
+# [1, 4, 9, 16, 25]
 
 # Tuple - ()
 my_tuple = (1, 2, 3, "four")
