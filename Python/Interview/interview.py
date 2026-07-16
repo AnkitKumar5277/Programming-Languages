@@ -1,12 +1,3 @@
-# String ko reverse kaise karte hain?
-text = "Python"
-print(text[::-1])
-nohtyP
-
-
-
-
-
 
 
 # Single inheritence
