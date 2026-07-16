@@ -1,3 +1,9 @@
+# String ko reverse kaise karte hain?
+text = "Python"
+print(text[::-1])
+nohtyP
+
+
 # concatenate two strings:
 string1 = "Hello"
 string2 = "world"
