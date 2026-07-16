@@ -1,5 +1,3 @@
-
-
 # Single inheritence
 class Animal:
     def sound(self):
@@ -10,6 +8,21 @@ class Dog(Animal):   # Dog inherits Animal
 d = Dog()
 d.sound()  # Inherited method
 d.bark()   # Dog's own method
+
+# Multiple inheritance
+class Father:
+    def father_method(self):
+        print("this is father's method")
+class Mother:
+    def mother_method(self):
+        print("this is mothers method")
+class Child(Father, Mother):
+    def child_method(self):
+        print("this is child's method")
+c = Child()
+c.father_method()
+c.mother_method()
+c.child_method()
 
 # Method Overriding
 class Animal:
