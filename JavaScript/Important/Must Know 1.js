@@ -1,3 +1,4 @@
+// var, let, and const
 // var
 var a = 10;
 console.log(a);
@@ -22,3 +23,16 @@ console.log(c); // 30
 // const c = 40; // ❌ Error: Cannot redeclare
 // c = 50;        // ❌ Error: Cannot reassign
 
+
+// == aur === difference
+// == loose equality
+let a = 5;
+let b = "5";
+console.log(a == b);
+// true
+
+// === strict equality
+let a = 5;
+let b = "5";
+console.log(a ===b);
+// false
