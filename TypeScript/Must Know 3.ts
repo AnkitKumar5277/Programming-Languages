@@ -26,5 +26,41 @@ const user: User = {
   name: "Ankit"
 };
 console.log(user.id);
-user.name = "Rahul";
-user.id = 102;
+user.name = "Rahul"; // ✅ Allowed
+// user.id = 102; // ❌ Error
+// 101
+
+// public (default)
+class Person {
+  public name: string = "Ankit";
+}
+const p = new Person();
+console.log(p.name);
+// Ankit
+
+// private
+class Person {
+  private age: number = 22;
+  showAge() {
+    console.log(this.age);
+  }
+}
+const p = new Person();
+p.showAge();      // 22
+// console.log(p.age); // ❌ Error
+// 22
+
+// Protected
+class Person {
+  protected city: string = "Delhi";
+}
+class Student extends Person {
+  showCity() {
+    console.log(this.city);
+  }
+}
+const s = new Student();
+s.showCity(); // Delhi
+// console.log(s.city); // ❌ Error
+
+
