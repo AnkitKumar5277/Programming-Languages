@@ -1,4 +1,4 @@
-// Data Types
+// Data Types 
 let num = 10;         // number
 let bool = true;      // boolean
 let arr = [1,2,3];    // array
