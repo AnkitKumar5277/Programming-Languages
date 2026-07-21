@@ -86,3 +86,10 @@ console.log("End");
 // Promise
 // Timeout
 
+// null vs undefined
+let a;
+console.log(a)
+// undefined
+
+// Null
+let b = null;
