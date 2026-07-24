@@ -33,7 +33,6 @@ fruits.forEach(fruit => {
 // Mango
 
 // some()
-// Returns true if at least one element matches the condition.
 let numbers = [1, 3, 5, 8];
 let hasEven = numbers.some(num => num % 2 === 0);
 console.log(hasEven);
@@ -65,7 +64,6 @@ console.log(allEven);
 
 
 // This Keyword and Arrow Function
-// Arrow Function 
 const add = (a, b) => a + b;
 console.log(add(5,3));
 // 8
@@ -84,10 +82,11 @@ person.arrowFunction();
 // Normal: Ankit
 // Arrow: undefined
 
-
+// spread operator
 const arr = [1, 2];
 const newArr = [...arr, 3];
 console.log(newArr);
+// [ 1, 2, 3 ]
 
 // Temporal Dead Zone (TDZ) 
 console.log(a);
