@@ -90,3 +90,44 @@ console.log(student);
 console.log(student.name);
 console.log(student.age);
 console.log(student.city);
+
+
+// Callback Hell
+function loginUser(callback) {
+    console.log("User Logged In");
+    callback();
+}
+function getProfile(callback) {
+    console.log("Profile Fetched");
+    callback();
+}
+function getOrders(callback) {
+    console.log("Orders Fetched");
+    callback();
+}
+loginUser(function () {
+    getProfile(function () {
+        getOrders(function () {
+            console.log("Done");
+        });
+    });
+});
+// User Logged In
+// Profile Fetched
+// Orders Fetched
+// Done
+
+
+// classes
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  introduce() {
+    console.log(`Hi, I am ${this.name}. My age is ${this.age}.`);
+  }
+}
+const person1 = new Person("Ankit", 22);
+person1.introduce();
+
