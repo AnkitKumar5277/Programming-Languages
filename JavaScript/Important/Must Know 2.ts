@@ -3,13 +3,15 @@ let num = 10;         // number
 let bool = true;      // boolean
 let arr = [1,2,3];    // array
 let obj = {a:1};      // object
+console.log(num, bool, arr, obj);
+// 10 true [ 1, 2, 3 ] { a: 1 }
+
 
 // Promise
 let promise = new Promise((resolve, reject) => {
   console.log("Pending...");
   setTimeout(() => {
     let paymentSuccess = true;
-
     if (paymentSuccess) {
       resolve("Payment Successful");
     } else {
@@ -31,6 +33,7 @@ promise
 
 // if paymentSuccess = false):
 // Payment Failed
+
 
 // Async Await
 // .then() aur .catch() ki jagah normal synchronous jaisa code likh sakte hain.
@@ -59,8 +62,6 @@ console.log("End");
 // Start
 // End
 // Hello - prints after 2 seconds
-
-// Promise (Microtask Queue)
 
 // Example 2: Promise (Microtask Queue)
 console.log("Start");
@@ -115,8 +116,6 @@ greet("Ankit", sayBye);
 // Goodbye!
 
 
-
-
 // null vs undefined
 let a;
 console.log(a)
@@ -124,5 +123,3 @@ console.log(a)
 
 // Null
 let b = null;
-
-
