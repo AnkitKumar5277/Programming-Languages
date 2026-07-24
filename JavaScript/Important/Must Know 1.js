@@ -5,13 +5,13 @@ function greet() {
 }
 greet();
 // Hello
+
 // Function Expression
 const greet = function() {
   console.log("Hello");
 }
 greet();
 // Hello
-
 
 
 // var, let, and const
