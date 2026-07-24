@@ -86,6 +86,22 @@ console.log("End");
 // Promise
 // Timeout
 
+
+// call stack
+def greet():
+    print("Hello")
+def welcome():
+    greet()
+    print("Welcome")
+def main():
+    welcome()
+    print("Main End")
+main()
+// Hello
+// Welcome
+// Main End
+
+
 // null vs undefined
 let a;
 console.log(a)
