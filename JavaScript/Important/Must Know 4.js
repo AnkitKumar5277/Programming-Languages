@@ -1,3 +1,4 @@
+// template literals
 let name = "Ankit";
 let age = 22;
 let message = `My name is ${name} and I am ${age} years old.`;
@@ -9,6 +10,49 @@ console.log(0 / 0);        // NaN
 console.log(Number("abc")); // NaN
 console.log(Math.sqrt(-1)); // NaN
 
+// Synchronous
+console.log("Start");
+function add() {
+  console.log(10 + 20);
+}
+add();
+console.log("End");
+// Start
+// 30
+// End
+
+// Asynchronous (Non-Blocking)
+console.log("Start");
+setTimeout(() => {
+  console.log("Task Completed");
+}, 2000);
+console.log("End");
+// Start
+// End
+// Task Completed
+
+
+// setTimeout()
+console.log("Start");
+setTimeout(() => {
+  console.log("Task Completed");
+}, 2000);
+console.log("End");
+// Start
+// End
+// Task Completed
+
+// setInterval() Example
+let id = setInterval(() => {
+  console.log("Hello");
+}, 2000);
+// (After 2 sec)
+// Hello
+// (After 2 sec)
+// Hello
+// (After 2 sec)
+// Hello
+// ...
 
 
 // slice() Example (Original array safe)
