@@ -131,3 +131,58 @@ class Person {
 const person1 = new Person("Ankit", 22);
 person1.introduce();
 
+
+// Shallow Copy
+const user1 = {
+  name: "Ankit",
+  address: { city: "Delhi" }
+};
+const user2 = { ...user1 }; // Shallow Copy
+user2.address.city = "Noida";
+console.log(user1.address.city); // Noida
+console.log(user2.address.city); // Noida
+
+// Deep Copy 
+const user1 = {
+  name: "Ankit",
+  address: { city: "Delhi" }
+};
+const user2 = structuredClone(user1); // Deep Copy
+user2.address.city = "Noida";
+console.log(user1.address.city); // Delhi
+console.log(user2.address.city); // Noida
+
+
+// call()
+const person = {
+  name: "Ankit"
+};
+function greet(city) {
+  console.log(`Hi ${this.name} from ${city}`);
+}
+greet.call(person, "Delhi");
+// Output:
+// Hi Ankit from Delhi
+
+// apply()
+const person = {
+  name: "Ankit"
+};
+function greet(city, country) {
+  console.log(`Hi ${this.name} from ${city}, ${country}`);
+}
+greet.apply(person, ["Delhi", "India"]);
+// Output:
+// Hi Ankit from Delhi, India
+
+// bind()
+const person = {
+  name: "Ankit"
+};
+function greet() {
+  console.log(`Hi ${this.name}`);
+}
+const newGreet = greet.bind(person);
+newGreet();
+// Output:
+// Hi Ankit
