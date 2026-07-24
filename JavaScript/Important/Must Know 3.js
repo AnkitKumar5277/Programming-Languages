@@ -44,3 +44,22 @@ let numbers = [2, 4, 6, 8];
 let allEven = numbers.every(num => num % 2 === 0);
 console.log(allEven);
 // Output: true
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+</head>
+<body>
+<h1 id="title">Hello World</h1>
+<button id="btn">Click Me</button>
+<script>
+    const button = document.getElementById("btn");
+    button.addEventListener("click", function () {
+        document.getElementById("title").textContent = "Button Clicked!";
+    });
+</script>
+</body>
+</html>
+
