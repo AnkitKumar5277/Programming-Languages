@@ -55,12 +55,6 @@ console.log(a ===b);
 
 
 // Hoisting
-console.log(a)
-var a = 10;
-console.log(a)
-// undefined
-// 10
-
 var a;            // Hoisted
 console.log(a);   // undefined
 a = 10;
@@ -79,7 +73,6 @@ console.log(name);
 // ankit
 // ankit
 
-
 // Function Scope
 function demo() {
     var age = 22;
@@ -88,7 +81,6 @@ function demo() {
 demo();
 // console.log(age); -> Error
 // 22
-
 
 // Block Scope
 if (true) {
@@ -111,5 +103,6 @@ function inner() {
 }
   inner();
 }
-outer();  //10
+outer();  
+//10
 
